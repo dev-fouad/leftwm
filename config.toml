@@ -4,20 +4,62 @@ tags = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 [[keybind]]
 command = "SoftReload"
-modifier = ["modkey", "Shift"]
+modifier = ["Mod1"]
 key = "r"
 
-[[keybind]]
-command = "Execute"
-value = "pkill leftwm"
-modifier = ["modkey", "Shift"]
-key = "q"
+#I use dmenu script
+#[[keybind]]
+#command = "Execute"
+#value = "pkill leftwm"
+#modifier = ["Mod1"]
+#key = "q"
 
 [[keybind]]
 command = "CloseWindow"
 modifier = ["modkey"]
 key = "q"
 
+[[keybind]]
+command = "ToggleFullScreen"
+modifier = ["modkey"]
+key = "f"
+
+[[keybind]]
+command = "ToggleScratchPad"
+value = "Alacritty" # Name set for the scratchpad
+modifier = ["modkey","Shift"]
+key = "p"
+
+[[keybind]]
+command = "DecreaseMainWidth"
+value = "5"
+modifier = ["modkey","Shift"]
+key = "a"
+
+[[keybind]]
+command = "IncreaseMainWidth"
+value = "5"
+modifier = ["modkey"]
+key = "a"
+
+[[keybind]]
+command = "FloatingToTile"
+modifier = ["modkey", "Shift"]
+key = "t"
+
+[[keybind]]
+command = "SetLayout"
+value = "Monocle"
+modifier = ["Mod1"]
+key = "m"
+
+[[keybind]]
+command = "SetLayout"
+value = "Fibonacci"
+modifier = ["Mod1"]
+key = "f"
+
+######################
 [[keybind]]
 command = "MoveToLastWorkspace"
 modifier = ["modkey", "Shift"]
@@ -74,11 +116,6 @@ command = "FocusWorkspacePrevious"
 modifier = ["modkey"]
 key = "Left"
 #key = "colon"
-
-[[keybind]]
-command = "FocusWorkspaceNext"
-modifier = ["modkey"]
-key = "Right"
 
 ###################
 #swithtag
@@ -263,8 +300,8 @@ key = "c"
 [[keybind]]
 command = "Execute"
 value = "alacritty -e ranger"
-modifier = ["modkey"]
-key = "z"
+modifier = ["modkey", "Shift"]
+key = "r"
 
 [[keybind]]
 command = "Execute"
